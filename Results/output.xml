@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191122 11:53:05.876" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ryan/Desktop/Development/py_dev/robot_dev/RobotFramework/Tests/WebApp_AssertString.robot" id="s1" name="WebApp AssertString">
+<test id="s1-t1" name="User can open home page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://expansiagroup.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191122 11:53:06.155" level="INFO">Opening browser 'chrome' to base url 'https://expansiagroup.com'.</msg>
+<status status="PASS" endtime="20191122 11:53:11.608" starttime="20191122 11:53:06.155"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Real Solutions to Real Problems</arg>
+</arguments>
+<status status="PASS" endtime="20191122 11:53:11.630" starttime="20191122 11:53:11.609"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20191122 11:53:11.765" starttime="20191122 11:53:11.630"></status>
+</kw>
+<doc>As a user I can open the home page and view the tagline</doc>
+<status status="PASS" endtime="20191122 11:53:11.766" critical="yes" starttime="20191122 11:53:06.153"></status>
+</test>
+<doc>This is a basic test</doc>
+<status status="PASS" endtime="20191122 11:53:11.767" starttime="20191122 11:53:05.879"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="WebApp AssertString" pass="1">WebApp AssertString</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
