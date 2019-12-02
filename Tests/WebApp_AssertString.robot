@@ -1,6 +1,4 @@
 *** Settings ***
-Documentation  This is a basic test
-Library  Selenium2Library
 Documentation  This is a basic web UI test
 Library  Selenium2Library
 
