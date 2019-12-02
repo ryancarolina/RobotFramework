@@ -20,3 +20,6 @@ Under the tests directory, execute the WebApp_AssertString.robot test by running
 If all is configured as expected, the above test exection should call the chrome browser driver and then execute the .robot test.
 
 I am developing my tests in the IDE PyCharm as it has plugin support for the RobotFramework, however other options like ATOM will work.
+
+# API Tests
+pip3 install -U robotframework-requests
