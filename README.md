@@ -23,3 +23,6 @@ I am developing my tests in the IDE PyCharm as it has plugin support for the Rob
 
 # API Tests
 pip3 install -U robotframework-requests
+
+# Start a simple Web Server
+For proof of concept and/or testing in an isolated environment, you may find it useful to start a web server locally and then run your .robot test against any .html files located within the directory where you executed python3 -m http.server.
