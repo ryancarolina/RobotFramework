@@ -14,6 +14,6 @@ A web server is started locally on port 8000 and a string assertion is performed
     open browser    http://0.0.0.0:8000/Resources/robotTest.html   chrome
     wait until page contains    This is a test page for the robot test framework.
     close browser
-    terminate all processes
+    ${result}=  terminate all processes
 
 *** Keywords ***
