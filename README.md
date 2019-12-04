@@ -13,7 +13,6 @@ pip3 install --upgrade robotframework-selenium2library
 pip3 install webdrivermanager
 # Install the chrome driver and create a symlink to /usr/local/bin
 webdrivermanager chrome --linkpath /usr/local/bin
-
 # Run the "WebApp_AssertString.robot test to confirm
 Under the tests directory, execute the WebApp_AssertString.robot test by running "robot -T -d Results WebApp_AssertString.robot"
 
@@ -26,3 +25,10 @@ pip3 install -U robotframework-requests
 
 # Start a simple Web Server
 For proof of concept and/or testing in an isolated environment, you may find it useful to start a web server locally and then run your .robot test against any .html files located within the directory where you executed python3 -m http.server.
+
+# Mock REST API
+Install node.js which in turn will install npm.
+Update npm via npm install npm@latest -g
+Install json-server via npm install -g json-server
+Create a db.json file to populate the endpoints.
+Launch the json-server with your db.json file via json-server --watch PATH/TO/db.json
