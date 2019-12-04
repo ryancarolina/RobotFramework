@@ -1,0 +1,9 @@
+{
+  "posts": [
+    { "id": 1, "title": "The Force", "author": "Yoda" }
+  ],
+  "comments": [
+    { "id": 1, "body": "Do. Or do not. There is no try.", "postId": 1 }
+  ],
+  "profile": { "name": "Yoda" }
+}
