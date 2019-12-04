@@ -1,9 +1,38 @@
 {
   "posts": [
-    { "id": 1, "title": "The Force", "author": "Yoda" }
+    {
+      "id": 1,
+      "title": "The Force",
+      "author": "Yoda"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "Do. Or do not. There is no try.", "postId": 1 }
+    {
+      "id": 1,
+      "body": "Do. Or do not. There is no try.",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "Yoda" }
+  "profile": [
+    {
+      "id": 1,
+      "name": "Yoda"
+    },
+    {
+      "id": "2",
+      "name": "Luke"
+    },
+    {
+      "id": "3",
+      "name": "Han"
+    },
+    {
+      "id": "4",
+      "name": "R2-D2"
+    },
+    {
+      "id": "5",
+      "name": "C3PO"
+    }
+  ]
 }
