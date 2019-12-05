@@ -15,7 +15,7 @@ ${sendLastName}=  Conklin
 ${clearPriorText}=  clear=True
 
 *** Test Cases ***
-A web server is started locally and a string assertion is performed.
+A web server is started locally and two string assertions are performed.
     [Documentation]  A web server is started locally on port 8000 and a string from the body of the .html page served is asserted as true.
 
     #Setup server and assert a string from the .html body

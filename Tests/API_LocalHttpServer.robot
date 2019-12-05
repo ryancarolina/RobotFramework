@@ -42,16 +42,24 @@ Get request against /profile/2 returns a JSON payload equal to Luke
     dictionary should contain value  ${response.json()}  Luke
     log to console  ${response.json()}
 
-#Post request against /profile returns 201OK and creates a new profile
-#    create session  json-server  ${baseUrl}
-#    &{body}=  create dictionary  id=6  name=Darth
-#    &{header}=  create dictionary  Content-Type=application/json
-#    ${response}=  post request  json-server  /profile  data=${body}  headers=${header}
-#    should be equal as strings  ${response.status_code}  201
-#    log to console  ${response.content}
+Post request against /profile returns 201OK and creates a new profile
+    create session  json-server  ${baseUrl}
+    &{body}=  create dictionary  id=6  name=Darth
+    &{header}=  create dictionary  Content-Type=application/json
+    ${response}=  post request  json-server  /profile  data=${body}  headers=${header}
+    should be equal as strings  ${response.status_code}  201
+    log to console  ${response.content}
 
-Delete request against /profile/3 returns successful and removes profile ID:3
+Delete request against /profile/6 returns successful and removes profile ID:6
     create session  json-server  ${baseUrl}
     ${response}=  delete request  json-server  /profile/6
     should be equal as strings  ${response.status_code}  200
     log to console  ${response.content}
+
+#Put request against /profile/2 returns 201 and updates the profile
+#    create session  json-server  ${baseUrl}
+#    &{body}=  create dictionary  name=LUKE
+#    &{header}=  create dictionary  Content-Type=application/json
+#    ${response}=  post request  json-server  /profile  data=${body}  headers=${header}
+#    should be equal as strings  ${response.status_code}  201
+#    log to console  ${response.content}
