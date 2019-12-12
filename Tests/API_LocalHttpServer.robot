@@ -42,7 +42,7 @@ Get request against /profile/2 returns a JSON payload equal to Luke
     dictionary should contain value  ${response.json()}  Luke
     log to console  ${response.json()}
 
-Post request against /profile returns 201OK and creates a new profile
+Post request against /profile returns 201OK and creates a new profile with ID 6 and name Darth
     create session  json-server  ${baseUrl}
     &{body}=  create dictionary  id=6  name=Darth
     &{header}=  create dictionary  Content-Type=application/json
@@ -56,10 +56,18 @@ Delete request against /profile/6 returns successful and removes profile ID:6
     should be equal as strings  ${response.status_code}  200
     log to console  ${response.content}
 
-#Put request against /profile/2 returns 201 and updates the profile
-#    create session  json-server  ${baseUrl}
-#    &{body}=  create dictionary  name=LUKE
-#    &{header}=  create dictionary  Content-Type=application/json
-#    ${response}=  post request  json-server  /profile  data=${body}  headers=${header}
-#    should be equal as strings  ${response.status_code}  201
-#    log to console  ${response.content}
+Put request against /profile returns 201 and creates a new ID with name LUKE.
+    create session  json-server  ${baseUrl}
+    &{body}=  create dictionary  name=LUKE
+    &{header}=  create dictionary  Content-Type=application/json
+    ${response}=  post request  json-server  /profile  data=${body}  headers=${header}
+    should be equal as strings  ${response.status_code}  201
+    log to console  ${response.content}
+
+Patch request against /profile/3 returns 201 and updates the profile name from Han to SOLO
+    create session  json-server  ${baseUrl}
+    &{body}=  create dictionary  id=3  name=SOLO
+    &{header}=  create dictionary  Content-Type=application/json
+    ${response}=  patch request  json-server  /profile/3  data=${body}  headers=${header}
+    should be equal as strings  ${response.status_code}  200
+    log to console  ${response.content}
