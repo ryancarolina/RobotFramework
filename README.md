@@ -28,11 +28,16 @@ For proof of concept and/or testing in an isolated environment, you may find it 
 
 # Mock REST API
 Install node.js which in turn will install npm.
+
 Update npm via npm install npm@latest -g
+
 Install json-server via npm install -g json-server
+
 Create a db.json file to populate the endpoints.
+
 Launch the json-server with your db.json file via json-server --watch PATH/TO/db.json
 
 # DB Testing
 sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  robotframework-databaselibrary
+
 sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  PyMySQL 
