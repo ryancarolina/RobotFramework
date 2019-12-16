@@ -35,3 +35,4 @@ Launch the json-server with your db.json file via json-server --watch PATH/TO/db
 
 # DB Testing
 sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  robotframework-databaselibrary
+sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  PyMySQL 
