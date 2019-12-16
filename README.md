@@ -38,8 +38,10 @@ Create a db.json file to populate the endpoints.
 Launch the json-server with your db.json file via json-server --watch PATH/TO/db.json
 
 # DB Testing
-sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  robotframework-databaselibrary
+sudo -H python3 -m pip install robotframework-databaselibrary
 
-sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  PyMySQL 
+sudo -H python3 -m pip install PyMySQL 
 
-sudo -H pip3 install -t /usr/local/lib/python3.7/site-packages  cryptography
+sudo -H python3 -m pip install cryptography
+
+sudo -H python3 -m pip install --upgrade  --force-reinstall cryptography
